@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.canvas-score-container{
+    display: flex;
+    gap: 5rem;
+}
+
+table{
+    border: 1px solid black;
+    height: 25vh;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+thead{
+    color: red;
+    font-size: 2rem;
+}
+
+tbody{
+    font-size: 1.2rem;
+    color: green;
+    text-align: center;
+}
+
+#input-section{
+margin-bottom: 1rem;
+}
+
+#username-input{
+    height: 2rem;
+    width: 11rem;
+    padding: 0.5rem;
+}
+
+#submitButton{
+    background-color: blue;
+    height: 2rem;
+    width: 4rem;
+    color: white;
+}
+
+#gameovermessage{
+color: black;
+margin-bottom: 1rem;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(7, 7, 197);
+    padding: 1rem 2rem;
+    border: none;
+    margin-left: 1.4rem;
+}
+
+.btn:hover{
+    color: black;
+    background-color: blue;
+}
+
+.hidden{
+    display: none;
+}

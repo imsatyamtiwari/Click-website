@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="input-section">
+        <input type="text" id="username-input" placeholder="Enter your username">
+        <button onclick="setUsername()" id="submitButton">Submit</button>
+    </div>
+    <div class="canvas-score-container">
+    <table id="score-table" style="display: none;">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>:</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+      
+        </tbody>
+    </table>
+        <canvas id="my-canvas" width="900" height="600" style="border: 1px solid #444;"></canvas> 
+    </div>
+        <div id="game-over-message" style="display: none;">
+        <h1 id="gameovermessage">Game Over</h1>
+        <button onclick="playAgain()" class="btn">Play Again</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
